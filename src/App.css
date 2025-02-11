@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../src/assets/font/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("../src/assets/font/gilroy-semibold.ttf") format("truetype");
+  font-weight: 600; /* Typically, Semibold is 600 */
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Secondary-500: #ff570a;
+  --Primary-50: #e6eefd;
+  --Primary-500: #0a6eb4; /* Added for the Donate button */
+  --Shade-White: #fafef0; /* Added for the Donate button text */
+  --space-600: 24px;
+  --space-400: 16px;
+  --light-grey: #c5c5cb;
+  --background-default: #fff;
+  --text-light: #55555d;
+}
+
+/* Styles for the Donate button */
+.donate-button {
+  display: flex;
+  padding: 16px 24px; /* Equivalent to py-4 px-6 */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 222px;
+  gap: 10px; /* Adjust gap as needed */
+  flex: 1 0 0; /* Allow the button to grow */
+  border-radius: 8px;
+  background: var(--Primary-500, #0a6eb4);
+  transition: background-color 15ms ease-in;
+}
+
+/* Styles for the Donate button text */
+.donate-button-text {
+  color: var(--Shade-White, #fafef0);
+  text-align: center;
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+  font-family: Inter, sans-serif; /* Fallback font */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 145%; /* 23.2px */
+}
+
+.donate-button:hover {
+  background-color: #3b8bc3; /* Change this color to your preferred lighter blue */
+}
+
+.donate-button-small {
+  display: flex;
+  padding: 12px 16px; /* Adjusted padding for a larger button */
+  justify-content: center;
+  align-items: center;
+  width: 140px; /* Increased width for more space */
+  gap: 8px; /* Adjusted gap for balance */
+  border-radius: 8px;
+  background-color: var(--Primary-500, #0a6eb4);
+  color: white; /* Assuming white text for contrast */
+  font-size: 14px; /* Font size remains the same */
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 15ms ease-in;
+  cursor: pointer;
+}
+
+.donate-button-small:hover {
+  background-color: #3b8bc3;
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+.donate-button-small:active {
+  transform: scale(0.98); /* Slightly compress on click */
+}
+
+.donate-button-variant {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Maintain consistent gap */
+  border-radius: 8px; /* Use fixed radius for consistency */
+  border: 1px solid var(--Secondary-500, #ff570a);
+  background: var(--Secondary-500, #ff570a);
+  color: var(--Secondary-50, #ffeee7);
+  font-weight: 600;
+  transition: background-color 15ms ease-in;
+  width: 227px; /* Width for the button */
+}
+
+.donate-button-variant:hover {
+  background-color: #ff793b; /* Lighter hover color */
+  transform: scale(1.05);
+}
+
+.text-primary {
+  color: var(--Primary-50);
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2.24px;
+  text-align: center;
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+}
+
+.text-secondary {
+  color: var(--Secondary-500);
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2.24px;
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+}
+
+.join-us-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px; /* Adjust gap as needed */
+  border: 2px solid var(--Secondary-500, #ff570a);
+  background-color: transparent;
+  padding: 18px 24px; /* Equivalent to py-4 px-6 */
+  border-radius: 8px;
+  width: 227px; /* Width for the button */
+  transition: background-color 15ms ease-in;
+}
+
+.join-us-button:hover {
+  background-color: transparent;
+  border: 2px solid var(--Secondary-400, #ff793b);
+
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+.join-us-button-text {
+  color: var(--Secondary-500, #ff570a);
+  text-align: center;
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+  font-family: Inter, sans-serif; /* Fallback font */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 145%; /* 23.2px */
+}
+
+.join-us-button:hover .join-us-button-text {
+  color: #ff793b; /* Changes text color to white on hover */
+}
+
+.join-us-variant-button {
+  display: flex;
+  padding: var(--Space-400, 16px) var(--Space-600, 24px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: var(--Radius-200, 8px);
+  background: var(--Primary-500, #0a6eb4);
+  color: var(--Shade-White, #fafef0); /* Text color */
+  text-align: center; /* Center text */
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on; /* Typography settings */
+  font-family: Inter, sans-serif; /* Ensures font fallback */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600; /* Semi-bold */
+  line-height: 145%; /* Line height */
+  cursor: pointer; /* Changes cursor on hover */
+  border: none; /* Removes default border */
+  transition: background-color 15ms ease-in;
+}
+
+/* Hover effect */
+.join-us-variant-button:hover {
+  background-color: #3b8bc3; /* Equivalent to Tailwind's 'blue-400' */
+  transform: scale(1.05); /* Grows slightly on hover */
+}
+
+/* Hover effect */
+
+.text-primary {
+  color: var(--Primary-50, #e6eefd);
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 56px */
+  letter-spacing: -2.24px;
+  text-align: center;
+}
+
+.text-secondary {
+  color: var(--Secondary-500, #ff570a);
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+  font-family: Gilroy-Bold, sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 56px */
+  letter-spacing: -2.24px;
+}
+
+.shadow-custom {
+  box-shadow: 0px 24px 32px -4px rgba(16, 25, 40, 0.08),
+    0px 8px 8px -4px rgba(16, 25, 40, 0.03);
+}
+
+/* Project card styling */
+.project-card {
+  padding: var(--space-600) var(--space-400);
+  border-radius: 16px;
+  border: 1px solid var(--light-grey);
+  background-color: var(--background-default);
+  max-width: 5970px; /* Adjust width as desired */
+
+  width: 100%;
+}
+
+.date-text {
+  color: var(--text-light);
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 145%; /* 17.4px */
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+}
+
+.custom-span {
+  color: var(--Foundation-Text-Light-Text, #55555d);
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+  font-family: "Inter", sans-serif; /* Ensure Inter is loaded */
+}
+
+.footer-button {
+  color: var(--Shade-White, #fafef0);
+
+  height: 55px; /* Fixed height */
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 145%;
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--Radius-200, 8px);
+  background: var(--Primary-500, #0a6eb4);
+  transition: background-color 15ms ease-in;
+}
+
+.footer-button:hover {
+  background-color: #3b8bc3; /* Equivalent to Tailwind's 'blue-400' */
+  transform: scale(1.05); /* Optional hover effect */
+}
+
+.footer-input {
+  width: 236px; /* Set width */
+  height: 56px; /* Set height */
+  padding: var(--Space-400, 16px);
+  display: flex;
+  align-items: center;
+  gap: var(--Space-300, 12px);
+  border-radius: 6px;
+  border: 1px solid var(--Grey-300, #d0d5dd);
+}
+
+.footer-h4 {
+  color: var(--Grey-400, var(--Text-Light-Grey, #98a2b3));
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%; /* 23.2px */
+}
+
+.footer-li {
+  color: var(--Grey-500, #667185);
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%; /* 23.2px */
+  padding-top: 16px;
+}
+
+.joinUsGen-button {
+  width: 207px;
+  padding: 16px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--Primary-500, #0a6eb4);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 15ms ease-in;
+}
+
+.joinUsGen-button:hover {
+  background-color: #3b8bc3; /* Equivalent to Tailwind's 'blue-400' */
+  transform: scale(1.05);
+}
+
+.joinUsGen-button:disabled {
+  background: var(--Primary-300, #d0d5dd);
+  cursor: not-allowed;
+}
+
+/* Custom border and shadow styles */
+.border-r-custom {
+  border-right: 2px solid var(--Grey-300, #d0d5dd);
+}
+
+.border-b-custom {
+  border-bottom: 2px solid var(--Grey-300, #d0d5dd);
+}
+
+.border-greyP {
+  border-radius: 16px;
+  box-shadow: 0px 0px 0px -10px rgba(16, 25, 40, 0.3),
+    0px 0px 0px -1px rgba(16, 25, 40, 0.04),
+    0px 0px 0px 1px rgba(16, 25, 40, 0.05);
+}
+
+.custom-dropdown option {
+  border: 0.5px solid var(--Primary-200, #8ebcdd);
+  box-shadow: 0px 3px 2px -2px rgba(0, 0, 0, 0.06),
+    0px 5px 3px -2px rgba(0, 0, 0, 0.02);
+  padding: 8px 12px; /* Optional: to control padding for the options */
+}
+
+@media only screen and (max-width: 1024px) {
+  .navigation {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #00000084;
+    display: none; /* Hidden by default */
+  }
+
+  .menu {
+    width: 100%;
+    position: absolute;
+    border-radius: 16px;
+    top: 90px;
+    left: 0;
+    background: #fff;
+    max-height: calc(100vh - 120px); /* Menu height adjusts dynamically */
+    overflow-y: auto;
+    padding: 1rem; /* Add padding for spacing */
+    flex-direction: column;
+    align-items: flex-start; /* Align links to the left */
+    line-height: 30px;
+  }
+  .show_Menu {
+    display: block; /* Show the navigation when 'show_Menu' is toggled */
+  }
+
+  /* Add styling for the close icon */
+  .menu-close-icon {
+    position: absolute;
+    right: 25px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 300; /* Ensure it's above other elements */
+  }
+
+  .sticky_header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+  }
+}
+
+@media (max-width: 640px) {
+  .video-container {
+    width: 390px;
+    margin: 0 auto; /* Center the video if needed */
+  }
+
+  .project-card {
+    height: auto; /* Allows dynamic height on small screens */
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .donate-button-variant {
+    font-size: 14px; /* Adjust font size as needed */
+    padding: 12px 20px; /* Optional: adjust padding for better fit */
+  }
+}

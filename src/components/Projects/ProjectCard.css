@@ -1,0 +1,95 @@
+:root {
+  --Primary-40: #ffece5; /* Define the pinkish background color */
+  --space-600: 24px;
+  --space-400: 16px;
+  --Space-200: 8px;
+  --light-grey: #c5c5cb;
+  --background-default: #fff;
+  --text-light: #55555d;
+}
+
+.project-card-title {
+  overflow: hidden;
+  color: var(--Foundation-Text-Dark-Text, #01010d);
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%; /* 23.2px */
+}
+
+.project-card-description {
+  color: var(--Foundation-Text-Light-text-2, #8a8a90);
+  font-feature-settings: "cv03" on, "cv04" on;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%; /* 20.3px */
+  text-align: justify;
+}
+
+.date-text {
+  color: var(--text-light);
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 145%; /* 17.4px */
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+}
+
+.custom-span {
+  color: var(--Foundation-Text-Light-Text, #55555d);
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+  font-family: "Inter", sans-serif; /* Ensure Inter is loaded */
+}
+
+/* styles.css */
+.custom-time-remaining {
+  color: var(--Foundation-Sec-sec-600, #e54a2c);
+  text-align: center;
+  font-feature-settings: "cv03" on, "cv04" on;
+  font-family: "Inter", sans-serif; /* Ensure Inter is loaded */
+  border-radius: 12px; /* Add border-radius */
+  background: var(
+    --Primary-40,
+    #ffece5
+  ) !important; /* Use !important to ensure it overrides other styles */
+}
+
+.custom-button {
+  display: flex;
+  padding: var(--Space-400, 16px) var(--Space-600, 24px); /* Further reduce vertical padding */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1.5px solid var(--Primary-500, #0a6eb4);
+  height: auto;
+  transition: background-color 0.3s ease-in;
+}
+
+/* Add a media query for large screens */
+
+.custom-button-text {
+  color: var(--blue, #0a6eb4);
+  text-align: center;
+  font-feature-settings: "cv01" on, "cv03" on, "cv04" on;
+  font-family: "Inter", sans-serif; /* Ensure Inter is loaded */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 145%; /* 23.2px */
+}
+
+.custom-button:hover {
+  background-color: #e7f1f8;
+  border: 1.5px solid var(--Primary-400, #5b9ecd);
+}
+
+.custom-button:hover .custom-button-text {
+  color: #5b9ecd; /* Ensure text becomes white on hover */
+}

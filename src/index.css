@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-full w-[1440px];
+  }
+  .btn {
+    @apply bg-Secondary-500 py-4 px-6 rounded-[8px] text-white font-semibold mt-[38px]; /* Match button radius and other styles */
+
+    @apply transition duration-300; /* Smooth transition for hover effects */
+  }
+
+  .btn:hover {
+    @apply bg-opacity-90; /* Adjust the background opacity on hover */
+    background-color: #ff6d2a; /* Set the hover color for the button */
+  }
+}
