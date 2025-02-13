@@ -13,8 +13,11 @@ import TeamMembers from "../components/AboutUs/TeamMembers";
 import TeamMembersMd from "../components/AboutUs/TeamMembersMd";
 import TeamMemberSm from "../components/AboutUs/TeamMemberSm";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../Context/LanguageContext";
+import nl2br from "react-nl2br";
 
 const AboutUs = () => {
+  const { translate } = useLanguage();
   const navigate = useNavigate();
 
   const handleJoinUsClick = () => {
@@ -37,15 +40,16 @@ const AboutUs = () => {
       >
         <div className="max-w-6xl lg:ml-[216px] px-4 md:pt-[68px] pt-[34px]">
           <h1 className="text-[#FEFFFD] font-[Gilroy-Bold] text-[48px] md:block hidden font-normal leading-[56px] tracking-[-2.24px]">
-            About Dara’Afrik Foundation
+            {nl2br(translate("about-titlee"))}
           </h1>
 
           <h1 className="text-[#FEFFFD] font-[Gilroy-Bold] text-[48px] block md:hidden font-normal leading-[56px] tracking-[-2.24px]">
-            About <br />
-            Dara’Afrik Foundation
+            {/*About <br />*/}
+            {/*Dara’Afrik Foundation*/}
+            {nl2br(translate("about-titlee"))}
           </h1>
           <p className="text-[#E3E7D7] font-Inter text-[24px] font-[600] leading-[33.6px] pt-2 pb-[56px]">
-            Breaking barriers, building lives...
+            {nl2br(translate("breaking-text"))}
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-start items-start md:items-center pb-[17px] ">
             <button
@@ -53,7 +57,7 @@ const AboutUs = () => {
               className="flex items-center w-[210px] gap-2 px-6 py-4  rounded-lg border border-[#FF570A] bg-[#FF570A] text-[#FEFFFD]
             hover:bg-[#FF793B] transition-colors duration-150 ease-in   font-inter text-[16px] font-semibold leading-[145%]"
             >
-              <span>Join Our Team</span> <img src={ArrowImg} alt="arrowimage" />
+              <span>{nl2br(translate("join-our-text"))}</span> <img src={ArrowImg} alt="arrowimage" />
             </button>
             <div className="flex items-center gap-1">
               <img
@@ -62,7 +66,7 @@ const AboutUs = () => {
                 className="object-contain"
               />
               <p className="text-[#E6E7E9] font-Inter text-[16px] font-[500] leading-[23.2px] ">
-                Volunteers across Nigeria
+                {nl2br(translate("volunteer-text"))}
               </p>
             </div>
           </div>
@@ -79,15 +83,16 @@ const AboutUs = () => {
       >
         <div className="max-w-6xl md:ml-[40px] px-4 md:pt-[64px] ">
           <h1 className="text-[#FEFFFD] font-[Gilroy-Bold] text-[48px] md:block hidden font-normal leading-[56px] tracking-[-2.24px]">
-            About Dara’Afrik Foundation
+            {nl2br(translate("about-titlee"))}
           </h1>
 
           <h1 className="text-[#FEFFFD] font-[Gilroy-Bold] text-[48px] block md:hidden font-normal leading-[56px] tracking-[-2.24px]">
-            About <br />
-            Dara’Afrik Foundation
+            {/*About <br />*/}
+            {/*Dara’Afrik Foundation*/}
+            {nl2br(translate("about-titlee"))}
           </h1>
           <p className="text-[#E3E7D7] font-Inter text-[24px] font-[600] leading-[33.6px] pt-2 pb-[56px]">
-            Breaking barriers, building lives...
+            {nl2br(translate("breaking-text"))}
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-start items-start md:items-center pb-[17px] ">
             <button
@@ -95,7 +100,7 @@ const AboutUs = () => {
               className="flex items-center w-[210px] gap-2 px-6 py-4  rounded-lg border border-[#FF570A] bg-[#FF570A] text-[#FEFFFD]
             hover:bg-[#FF793B] transition-colors duration-150 ease-in  font-inter text-[16px] font-semibold leading-[145%]"
             >
-              <span>Join Our Team</span> <img src={ArrowImg} alt="arrowimage" />
+              <span> {nl2br(translate("join-our-text"))}</span> <img src={ArrowImg} alt="arrowimage" />
             </button>
             <div className="flex items-center gap-1">
               <img
@@ -120,15 +125,16 @@ const AboutUs = () => {
       >
         <div className="  px-4  pt-[34px]">
           <h1 className="text-[#FEFFFD] font-[Gilroy-Bold] text-[48px] md:block hidden font-normal leading-[56px] tracking-[-2.24px]">
-            About Dara’Afrik Foundation
+            {nl2br(translate("about-titlee"))}
           </h1>
 
           <h1 className="text-[#FEFFFD] font-[Gilroy-Bold] text-[48px] block md:hidden font-normal leading-[56px] tracking-[-2.24px]">
-            About <br />
-            Dara’Afrik Foundation
+            {/*About <br />*/}
+            {/*Dara’Afrik Foundation*/}
+            {nl2br(translate("about-titlee"))}
           </h1>
           <p className="text-[#E3E7D7] font-Inter text-[24px] font-[600] leading-[33.6px] pt-2 pb-[56px]">
-            Breaking barriers, building lives...
+            {nl2br(translate("breaking-text"))}
           </p>
           <div className="flex flex-col md:flex-row gap-8 justify-start items-start md:items-center ">
             <button
@@ -136,7 +142,7 @@ const AboutUs = () => {
               className="flex items-center w-[210px] gap-2 px-6 py-4  rounded-lg border border-[#FF570A] bg-[#FF570A] text-[#FEFFFD]
            hover:bg-[#FF793B] transition-colors duration-150 ease-in  font-inter text-[16px] font-semibold leading-[145%]"
             >
-              <span>Join Our Team</span> <img src={ArrowImg} alt="arrowimage" />
+              <span>{nl2br(translate("join-our-text"))}</span> <img src={ArrowImg} alt="arrowimage" />
             </button>
             <div className="flex items-center gap-1">
               <img

@@ -8,8 +8,11 @@ import chairPersonImgSm from "../../assets/images/aboutUsImg/chiarPersonSmImg.pn
 import visionBgImg from "../../assets/images/aboutUsImg/visionBg.png";
 import visionBgImgMd from "../../assets/images/aboutUsImg/visionBgImgMd.png";
 import visionBgImgSm from "../../assets/images/aboutUsImg/visionBgImgSm.png";
+import { useLanguage } from "../../Context/LanguageContext";
+import nl2br from "react-nl2br";
 
 const AboutFounder = () => {
+  const { translate } = useLanguage();
   return (
     <section>
       <div
@@ -29,37 +32,25 @@ const AboutFounder = () => {
             <div className="pt-[140px] pl-6 pr-6 pb-[80px]">
               {" "}
               <h2 className="text-[#020C21] font-[Gilroy-SemiBold] pb-4 text-[40px]  font-normal leading-[48px] tracking-[-1.6px]">
-                Why Dara’Afrik Foundation?
+                {translate("why-dara")}
               </h2>
               <p className="text-[#555C6A] font-Inter text-[18px] font-normal leading-[25.2px] pb-6 ">
-                Growing up as a young girl from modest beginnings in a rural
-                community where girls' education was not prioritized, access to
-                essential educational materials was limited, and safe health
-                care services was not easily accessible except for the
-                financially stable families.
+                {nl2br(translate("growing-text"))}
               </p>
               <p className="text-[#555C6A] font-Inter text-[18px] font-normal  leading-[25.2px]  pb-6">
-                I made a bold decision to stand out. With determination,
-                resilience, and unwavering support - especially from my mother -
-                I overcame the challenges, pursued my education, and found my
-                voice.
+                {nl2br(translate("para-text2"))}
               </p>
               <p className="text-[#555C6A] font-Inter text-[18px] font-normal leading-[25.2px] pb-6 ">
-                This journey inspired me to create the Dara'afrik Foundation, a
-                platform dedicated to empowering thousands of girls like me in
-                underserved communities.{" "}
+                {nl2br(translate("para-text3"))}.{" "}
               </p>
               <p className="text-[#555C6A] font-Inter text-[18px] font-normal  leading-[25.2px] pb-6 ">
-                We seek to nurture their dreams for a brighter future, proving
-                that with the right support, challenges can be transformed into
-                stepping stones to success while providing access to safe
-                healthcare to women
+                {nl2br(translate("para-text4"))}
               </p>
               <h2 className="text-[#020C21] font-Inter pb-2 text-[24px]  font-semibold leading-[28.8px] tracking-[-0.48px]">
                 Pharm. Bassey Ebong
               </h2>
               <p className="text-[#353D4D] font-Inter text-[18px] font-medium leading-[26.1px]">
-                Founder /Head of Programs{" "}
+                {nl2br(translate("founder-title"))}{" "}
               </p>
             </div>
           </div>
@@ -80,15 +71,11 @@ const AboutFounder = () => {
                 }}
               >
                 <h2 className="text-[#020C21] font-[Gilroy-SemiBold] text-[36px] text-center font-normal leading-[43.2px]  pb-4 tracking-[-1.44px]">
-                  Our Vision
+                  {nl2br(translate("Our Vision"))}
                 </h2>
 
                 <p className="text-[#555C6A] font-Inter text-[20px] text-center font-medium leading-[28px] w-[269px]">
-                  To create a world where women and girls in underserved
-                  communities navigate the challenges of life through access to
-                  safe and quality health care services, technology education,
-                  and food security. Raising women and girls as pillars for
-                  sustainable economic development for all.
+                  {nl2br(translate("vision-text"))}
                 </p>
               </div>
             </div>
@@ -106,14 +93,11 @@ const AboutFounder = () => {
                 }}
               >
                 <h2 className="text-[#020C21] font-[Gilroy-SemiBold] text-[36px] text-center font-normal leading-[43.2px]  pb-4 tracking-[-1.44px]">
-                  Our Mission
+                  {nl2br(translate("mission-title"))}
                 </h2>
 
                 <p className="text-[#555C6A] font-Inter text-[20px] text-center font-medium leading-[28px] w-[269px]">
-                  Our mission is to drive sustainable economic development for
-                  women and girls in Africa through targeted programs focused on
-                  healthcare, education, technology advocacy and food security.
-                  Providing support for women and girls to build thriving lives.
+                  {nl2br(translate("mission-text"))}
                 </p>
               </div>
             </div>
@@ -141,36 +125,25 @@ const AboutFounder = () => {
             }}
           >
             <h2 className="text-[#020C21] font-[Gilroy-SemiBold] pb-4 lg:text-[40px] md:text-[36px] font-normal leading-[48px] tracking-[-1.6px]">
-              Why Dara’Afrik Foundation?
+              {translate("why-dara")}
             </h2>
             <p className="text-[#555C6A] font-Inter text-[18px] font-normal text-left leading-[25.2px] pb-6">
-              Growing up as a young girl from modest beginnings in a rural
-              community where girls' education was not prioritized, access to
-              essential educational materials was limited, and safe health care
-              services was not easily accessible except for the financially
-              stable families.
+              {nl2br(translate("growing-text"))}
             </p>
             <p className="text-[#555C6A] font-Inter text-[18px] font-normal text-left leading-[25.2px]  pb-6">
-              I made a bold decision to stand out. With determination,
-              resilience, and unwavering support - especially from my mother - I
-              overcame the challenges, pursued my education, and found my voice.
+              {nl2br(translate("para-text2"))}
             </p>
             <p className="text-[#555C6A] font-Inter text-[18px] font-normal text-left leading-[25.2px] pb-6 ">
-              This journey inspired me to create the Dara'afrik Foundation, a
-              platform dedicated to empowering thousands of girls like me in
-              underserved communities.{" "}
+              {nl2br(translate("para-text3"))}.{" "}
             </p>
             <p className="text-[#555C6A] font-Inter text-[18px] font-normal text-left leading-[25.2px] pb-6 ">
-              We seek to nurture their dreams for a brighter future, proving
-              that with the right support, challenges can be transformed into
-              stepping stones to success while providing access to safe
-              healthcare to women.
+              {nl2br(translate("para-text4"))}
             </p>
             <h2 className="text-[#020C21] font-Inter pb-2 text-[24px]  font-semibold leading-[28.8px] tracking-[-0.48px]">
               Pharm. Bassey Ebong
             </h2>
             <p className="text-[#353D4D] font-Inter text-[18px] font-medium leading-[26.1px]">
-              Founder /Head of Programs{" "}
+              {nl2br(translate("founder-title"))}{" "}
             </p>
           </div>
         </div>
@@ -190,15 +163,11 @@ const AboutFounder = () => {
                 }}
               >
                 <h2 className="text-[#020C21] font-[Gilroy-SemiBold] text-[36px]  font-normal leading-[43.2px]  pb-4 tracking-[-1.44px]">
-                  Our Vision
+                  {nl2br(translate("Our Vision"))}
                 </h2>
 
                 <p className="text-[#555C6A] font-Inter text-[20px] font-medium leading-[28px] w-[484px]">
-                  To create a world where women and girls in underserved
-                  communities navigate the challenges of life through access to
-                  safe and quality health care services, technology education,
-                  and food security. Raising women and girls as pillars for
-                  sustainable economic development for all.
+                  {nl2br(translate("vision-text"))}
                 </p>
               </div>
             </div>
@@ -217,14 +186,11 @@ const AboutFounder = () => {
                 }}
               >
                 <h2 className="text-[#020C21] font-[Gilroy-SemiBold] text-[36px]  font-normal leading-[43.2px]  pb-4 tracking-[-1.44px]">
-                  Our Mission
+                  {nl2br(translate("mission-title"))}
                 </h2>
 
                 <p className="text-[#555C6A] font-Inter text-[20px] font-medium leading-[28px]">
-                  Our mission is to drive sustainable economic development for
-                  women and girls in Africa through targeted programs focused on
-                  healthcare, education, technology advocacy and food security.
-                  Providing support for women and girls to build thriving lives.
+                  {nl2br(translate("mission-text"))}
                 </p>
               </div>
             </div>
@@ -251,36 +217,25 @@ const AboutFounder = () => {
             }}
           >
             <h2 className="text-[#020C21] font-[Gilroy-SemiBold] pb-4 lg:text-[40px] md:text-[36px] font-normal leading-[48px] tracking-[-1.6px]">
-              Why Dara’Afrik Foundation?
+              {translate("why-dara")}
             </h2>
             <p className="text-[#555C6A] font-Inter text-[18px] font-normal text-left leading-[25.2px] pb-6">
-              Growing up as a young girl from modest beginnings in a rural
-              community where girls' education was not prioritized, access to
-              essential educational materials was limited, and safe health care
-              services was not easily accessible except for the financially
-              stable families.
+              {nl2br(translate("growing-text"))}
             </p>
             <p className="text-[#555C6A] font-Inter text-[18px] font-normal text-left leading-[25.2px]  pb-6">
-              I made a bold decision to stand out. With determination,
-              resilience, and unwavering support - especially from my mother - I
-              overcame the challenges, pursued my education, and found my voice.
+              {nl2br(translate("para-text2"))}
             </p>
             <p className="text-[#555C6A] font-Inter text-[18px] font-normal text-left leading-[25.2px] pb-6 ">
-              This journey inspired me to create the Dara'afrik Foundation, a
-              platform dedicated to empowering thousands of girls like me in
-              underserved communities.{" "}
+              {nl2br(translate("para-text3"))}{" "}
             </p>
             <p className="text-[#555C6A] font-Inter text-[18px] font-normal text-left leading-[25.2px] pb-6 ">
-              We seek to nurture their dreams for a brighter future, proving
-              that with the right support, challenges can be transformed into
-              stepping stones to success while providing access to safe
-              healthcare to women.
+              {nl2br(translate("para-text4"))}
             </p>
             <h2 className="text-[#020C21] font-Inter pb-2 text-[24px]  font-semibold leading-[28.8px] tracking-[-0.48px]">
               Pharm. Bassey Ebong
             </h2>
             <p className="text-[#353D4D] font-Inter text-[18px] font-medium leading-[26.1px]">
-              Founder /Head of Programs{" "}
+              {nl2br(translate("founder-title"))}{" "}
             </p>
           </div>
         </div>
@@ -300,15 +255,11 @@ const AboutFounder = () => {
                 }}
               >
                 <h2 className="text-[#020C21] font-[Gilroy-SemiBold] text-[36px]  font-normal leading-[43.2px]  pb-4 tracking-[-1.44px]">
-                  Our Vision
+                  {nl2br(translate("Our Vision"))}
                 </h2>
 
                 <p className="text-[#555C6A] font-Inter text-[16px] font-medium leading-[28px] ">
-                  To create a world where women and girls in underserved
-                  communities navigate the challenges of life through access to
-                  safe and quality health care services, technology education,
-                  and food security. Raising women and girls as pillars for
-                  sustainable economic development for all.
+                  {nl2br(translate("vision-text"))}
                 </p>
               </div>
             </div>
@@ -327,14 +278,11 @@ const AboutFounder = () => {
                 }}
               >
                 <h2 className="text-[#020C21] font-[Gilroy-SemiBold] text-[36px]  font-normal leading-[43.2px]  pb-4 tracking-[-1.44px]">
-                  Our Mission
+                  {nl2br(translate("mission-title"))}
                 </h2>
 
                 <p className="text-[#555C6A] font-Inter text-[16px] font-medium leading-[28px] ">
-                  Our mission is to drive sustainable economic development for
-                  women and girls in Africa through targeted programs focused on
-                  healthcare, education, technology advocacy and food security.
-                  Providing support for women and girls to build thriving lives.
+                  {nl2br(translate("mission-text"))}
                 </p>
               </div>
             </div>

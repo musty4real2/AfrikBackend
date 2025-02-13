@@ -46,7 +46,7 @@ const Footer = () => {
           <div className="flex lg:flex-row flex-col gap-12 pb-[64px] lg:pb-0">
             <div>
               <h4 className="footer-h4 whitespace-nowrap lg:pb-6 pb-0">
-                Quick Links
+                {translate("quick-links")}
               </h4>
               <ul className="text-sm space-y-2">
                 <li className="footer-li">
@@ -60,7 +60,7 @@ const Footer = () => {
                       } text-[16px]`
                     }
                   >
-                    Donate
+                    {translate("Donate")}
                   </NavLink>
                 </li>
                 <li className="footer-li">
@@ -74,7 +74,7 @@ const Footer = () => {
                       } text-[16px]`
                     }
                   >
-                    Join Us
+                    {translate("Join Us")}
                   </NavLink>
                 </li>
 
@@ -89,7 +89,7 @@ const Footer = () => {
                       } text-[16px]`
                     }
                   >
-                    Our Work
+                    {translate("Our Work")}
                   </NavLink>
                 </li>
 
@@ -104,13 +104,13 @@ const Footer = () => {
                       } text-[16px]`
                     }
                   >
-                    FAQ
+                    {translate("FAQ")}
                   </NavLink>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="footer-h4 lg:pb-6 pb-0">Legal</h4>
+              <h4 className="footer-h4 lg:pb-6 pb-0">{translate("Legal")}</h4>
               <ul className="text-sm space-y-2">
                 <li className="footer-li whitespace-nowrap">
                   <NavLink
@@ -123,7 +123,7 @@ const Footer = () => {
                       } text-[16px]`
                     }
                   >
-                    Privacy Policy
+                    {translate("privacy-policy")}
                   </NavLink>
                 </li>
                 <li className="footer-li whitespace-nowrap">
@@ -137,7 +137,7 @@ const Footer = () => {
                       } text-[16px]`
                     }
                   >
-                    Terms of Service
+                    {translate("terms-text")}
                   </NavLink>
                 </li>
                 <li className="footer-li whitespace-nowrap">
@@ -151,7 +151,7 @@ const Footer = () => {
                       } text-[16px]`
                     }
                   >
-                    Cookie Policy
+                    {translate("cookie-text")}
                   </NavLink>
                 </li>
                 <li className="footer-li whitespace-nowrap">
@@ -165,14 +165,14 @@ const Footer = () => {
                       } text-[16px]`
                     }
                   >
-                    Disclaimer
+                    {translate("disclaimer-text")}
                   </NavLink>
                 </li>
               </ul>
             </div>
           </div>
           <div>
-            <h4 className="footer-h4 whitespace-nowrap pb-6">Contact Us</h4>
+            <h4 className="footer-h4 whitespace-nowrap pb-6">{translate("Contact Us")}</h4>
             <ul className="text-sm lg:space-y-2">
               <li className="footer-li pb-[14px] whitespace-nowrap hidden  lg:flex gap-4">
                 <img src={route} alt="route" className="w-6 h-6" />
@@ -225,7 +225,7 @@ const Footer = () => {
             className="text-[#1D2739] text-sm font-normal leading-[145%] font-inter"
             style={{ fontFeatureSettings: "'cv03' on, 'cv04' on" }}
           >
-            © 2024 DaraAfrik Foundation. All rights reserved.
+            © 2024 DaraAfrik Foundation. {translate("all-t")}.
           </p>
         </div>
         <div>
