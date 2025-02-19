@@ -5,8 +5,11 @@ import ourProgramBgMd from "../../assets/images/aboutUsImg/ourProgramBgMd.png";
 import ourProgramBgSm from "../../assets/images/aboutUsImg/ourProgramBgSm.png";
 import programArrow from "../../assets/images/aboutUsImg/programArrow.png";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../../Context/LanguageContext";
+import nl2br from "react-nl2br";
 
 const OurProgram = () => {
+  const { translate } = useLanguage();
   const navigate = useNavigate();
 
   const handleLearnMore = (program) => {
@@ -25,6 +28,7 @@ const OurProgram = () => {
 
   // Add this useEffect in your /our-work page component
   useEffect(() => {
+
     if (location.state?.scrollTo) {
       const element = document.getElementById(location.state.scrollTo);
       if (element) {
@@ -58,7 +62,7 @@ const OurProgram = () => {
             }}
           >
             <h2 className="text-[#FEFFFD] font-[Gilroy-Bold] text-[40px] text-center font-normal leading-[48px] py-6 tracking-[-1.6px]">
-              Our Programs
+              {nl2br(translate("programs-head"))}
             </h2>
             <div className="flex justify-center items-center gap-6 pb-6 text-[#FEFFFD]">
               <div className="w-[28%] px-6 py-2">

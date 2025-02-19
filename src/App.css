@@ -47,6 +47,8 @@
   transition: background-color 15ms ease-in;
 }
 
+
+
 /* Styles for the Donate button text */
 .donate-button-text {
   color: var(--Shade-White, #fafef0);
